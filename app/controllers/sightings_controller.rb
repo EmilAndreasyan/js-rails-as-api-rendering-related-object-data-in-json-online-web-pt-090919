@@ -10,7 +10,7 @@ end
     if sighting
     render json: sighting, include: [:bird, :location]
   else
-    render json: {message: ''}
+    render json: {message: 'No sighting found with that id'}
   end
   end
 end
